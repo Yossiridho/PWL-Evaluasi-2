@@ -12,13 +12,9 @@ Aplikasi ini merupakan portal berita modern yang dibangun menggunakan **Next.js*
   - RSS Feed BBC
 - 🧱 Tampilan berita responsif dan modern menggunakan **CSS Grid**, **hover effects**, dan **masonry layout**
 - 🔑 Fitur login dan logout
-  - Halaman login menampilkan form username/password (dummy)
   - Login menggunakan akun Google
 - 🧭 Navbar dinamis menampilkan nama pengguna yang login dan tombol logout
 - 📡 Pengelolaan state dan API Routes di Next.js untuk menyajikan berita dari berbagai sumber secara seragam
-- ❌ Handling error dan validasi data:
-  - Hanya menampilkan berita yang memiliki gambar valid
-  - Fallback gambar jika gagal dimuat
 
 ---
 
@@ -29,7 +25,6 @@ Aplikasi ini merupakan portal berita modern yang dibangun menggunakan **Next.js*
 - 🔗 Detail berita mengarah ke sumber asli
 - 🌆 Background halaman dengan gambar dan efek blur
 - 🎨 Hover interaktif pada kartu berita
-- 🧹 Filter otomatis hanya menampilkan berita dengan gambar
 - 🧑 Navbar dengan info pengguna dan tombol logout
 
 ---
