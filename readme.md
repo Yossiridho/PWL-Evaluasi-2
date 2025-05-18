@@ -1,81 +1,138 @@
-Nama	: Yossi Afridho
-NIM	: 122140211
-________________________________________
-Evaluasi 2 Pemrograman Web Lanjut
-1. Penjelasan Aplikasi
-Aplikasi ini merupakan portal berita modern yang dibangun menggunakan Next.js dengan fitur utama:
-•	Autentikasi pengguna menggunakan OAuth2 dengan Google melalui NextAuth.js.
-•	Pengambilan berita dari beberapa sumber: NewsAPI, The Guardian API, Currents API, dan RSS feed BBC.
-•	Tampilan berita responsif dan modern menggunakan CSS Grid dengan efek hover dan masonry layout.
-•	Fitur login dan logout dengan halaman login yang menampilkan form username/password(tidak diintegrasikan) dan opsi login Google.
-•	Navbar dinamis menampilkan nama pengguna yang login dan tombol logout.
-•	Pengelolaan state dan API routes di Next.js untuk menggabungkan dan menyajikan data berita dari berbagai portal secara seragam.
-•	Handling error dan validasi data agar berita yang ditampilkan hanya yang memiliki gambar valid, serta fallback gambar jika gagal dimuat.
-2. Fitur Utama
-•	Login dengan Google OAuth2
-•	Halaman daftar berita utama dengan layout kartu berita yang rapi dan responsif.
-•	Detail berita dengan link ke sumber asli.
-•	Background halaman dengan image dan efek blur modern.
-•	Efek hover interaktif pada kartu berita.
-•	Filter otomatis hanya menampilkan berita dengan gambar.
-•	Navbar dengan user info dan tombol logout.
-________________________________________
-3. Cara Instalasi dan Menjalankan Aplikasi
-Prasyarat
-•	Node.js (versi 18 atau lebih baru direkomendasikan)
-•	npm
-•	Akun dan API key untuk NewsAPI, Guardian API, Currents API
-•	Google OAuth client ID dan client secret untuk autentikasi
-Langkah Instalasi
-1.	Buat proyek
-npx create-next-app@latest <nama-proyek-anda>
-2.	Install dependensi
-npm install
-3.	Buat file .env.local di root proyek dan isi variabel berikut:
-NEXTAUTH_SECRET=your-random-secret-key
-GOOGLE_CLIENT_ID=your-google-client-id
-GOOGLE_CLIENT_SECRET=your-google-client-secret
-NEWS_API_KEY=your-newsapi-key
-GUARDIAN_API_KEY=your-guardian-api-key
-CURRENTS_API_KEY=your-currentsapi-key
-Catatan:
-Untuk mendapatkan kunci API dan OAuth client, daftar pada situs resmi masing-masing layanan.
-4.	Jalankan aplikasi
-npm run dev
-5.	Akses aplikasi
-Buka browser dan buka alamat:
-http://localhost:3000/login
-Masuk menggunakan Google atau isi form username dan password dummy.
-________________________________________
-4. Struktur Proyek
-app
-|--api
-|    |-auth
-|        |--[...nextauth]
-|        |    |--route.ts    
-|        |--news
-|             |--route.ts                   
-|--components
-|    |--LogoutButton.tsx
-|    |--Navbar.tsx                      
-|    |--NewsList.tsx                    
-|--login 
-|    |--page.tsx 
-|--news
-|    |--[id]
-         |--page.tsx                        
-|--public
-|    |--images                        
-|--global.css
-|--Layout.tsx 
-|--provider.tsx                    
-________________________________________
-5. Cara Penggunaan
-•	Buka halaman login, login dengan Google
-•	Setelah login berhasil, otomatis diarahkan ke halaman berita utama.
-•	Di halaman utama terdapat navbar dengan nama pengguna dan tombol logout.
-•	Berita utama ditampilkan dalam kartu dengan gambar, judul, waktu, dan sumber.
-•	Hover pada kartu memberikan efek interaktif.
-•	Logout untuk keluar dan kembali ke halaman login.
-________________________________________
+# 📰 Portal Berita Modern - Evaluasi 2 Pemrograman Web Lanjut
 
+## 1. Penjelasan Aplikasi
+
+Aplikasi ini merupakan portal berita modern yang dibangun menggunakan **Next.js** dengan fitur utama:
+
+- 🔐 Autentikasi pengguna menggunakan **OAuth2 dengan Google** melalui **NextAuth.js**
+- 📰 Pengambilan berita dari beberapa sumber:
+  - NewsAPI
+  - The Guardian API
+  - Currents API
+  - RSS Feed BBC
+- 🧱 Tampilan berita responsif dan modern menggunakan **CSS Grid**, **hover effects**, dan **masonry layout**
+- 🔑 Fitur login dan logout
+  - Halaman login menampilkan form username/password (dummy)
+  - Login menggunakan akun Google
+- 🧭 Navbar dinamis menampilkan nama pengguna yang login dan tombol logout
+- 📡 Pengelolaan state dan API Routes di Next.js untuk menyajikan berita dari berbagai sumber secara seragam
+- ❌ Handling error dan validasi data:
+  - Hanya menampilkan berita yang memiliki gambar valid
+  - Fallback gambar jika gagal dimuat
+
+---
+
+## 2. Fitur Utama
+
+- ✅ Login dengan Google OAuth2
+- 🗂️ Halaman daftar berita utama dengan **layout kartu responsif**
+- 🔗 Detail berita mengarah ke sumber asli
+- 🌆 Background halaman dengan gambar dan efek blur
+- 🎨 Hover interaktif pada kartu berita
+- 🧹 Filter otomatis hanya menampilkan berita dengan gambar
+- 🧑 Navbar dengan info pengguna dan tombol logout
+
+---
+
+## 3. Cara Instalasi dan Menjalankan Aplikasi
+
+### 🛠️ Prasyarat
+
+- **Node.js** (Versi 18 atau lebih baru)
+- **npm**
+- Akun dan API Key untuk:
+  - NewsAPI
+  - Guardian API
+  - Currents API
+- Google OAuth Client ID & Secret
+
+### 📦 Langkah Instalasi
+
+1. **Buat proyek baru**:
+   ```bash
+   npx create-next-app@latest <nama-proyek-anda>
+   ```
+
+2. **Install dependensi**:
+   ```bash
+   npm install
+   ```
+
+3. **Buat file `.env.local` di root proyek** dan isi dengan variabel berikut:
+
+   ```env
+   NEXTAUTH_SECRET=your-random-secret-key
+   GOOGLE_CLIENT_ID=your-google-client-id
+   GOOGLE_CLIENT_SECRET=your-google-client-secret
+   NEWS_API_KEY=your-newsapi-key
+   GUARDIAN_API_KEY=your-guardian-api-key
+   CURRENTS_API_KEY=your-currentsapi-key
+   ```
+
+   💡 *Daftar di situs resmi masing-masing layanan untuk mendapatkan API Key dan OAuth Client.*
+
+4. **Jalankan aplikasi**:
+   ```bash
+   npm run dev
+   ```
+
+5. **Akses aplikasi**:
+   Buka browser dan kunjungi:
+   ```
+   http://localhost:3000/login
+   ```
+   Login menggunakan Google atau form dummy.
+
+---
+
+## 4. Struktur Proyek
+
+```
+app/
+├── api/
+│   ├── auth/
+│   │   ├── [...nextauth]/          # Konfigurasi autentikasi NextAuth
+│   │   └── route.ts                # API route untuk auth
+│   └── news/
+│       └── route.ts                # API route untuk data berita
+│
+├── components/
+│   ├── LogoutButton.tsx           # Komponen tombol logout
+│   ├── Navbar.tsx                 # Navigasi atas
+│   └── NewsList.tsx               # Daftar berita
+│
+├── login/
+│   └── page.tsx                   # Halaman login
+│
+├── news/
+│   └── [id]/
+│       └── page.tsx               # Halaman detail berita
+│
+├── public/
+│   └── images/                    # Folder untuk aset gambar
+│
+├── global.css                     # File global style
+├── Layout.tsx                     # Komponen layout utama
+└── provider.tsx                   # Provider untuk state/global context
+```
+
+---
+
+## 5. Cara Penggunaan
+
+1. Buka halaman **/login**
+2. Login menggunakan **Google**
+3. Setelah login, pengguna diarahkan ke halaman **utama berita**
+4. Di halaman utama:
+   - Navbar menampilkan **nama pengguna** dan **tombol logout**
+   - Setiap kartu berita menampilkan:
+     - Gambar
+     - Judul
+     - Waktu
+     - Sumber
+   - Hover pada kartu memberikan efek visual interaktif
+5. Klik logout untuk keluar dan kembali ke halaman login
+
+---
+
+Selamat menggunakan aplikasi portal berita ini! 🚀
