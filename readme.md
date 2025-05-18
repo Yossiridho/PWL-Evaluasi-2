@@ -43,9 +43,11 @@ Aplikasi ini merupakan portal berita modern yang dibangun menggunakan **Next.js*
 
 ### 📦 Langkah Instalasi
 
-1. **Buat proyek baru**:
+1. **Buat proyek baru atau clone github**:
    ```bash
    npx create-next-app@latest <nama-proyek-anda>
+   atau
+   git clone https://github.com/Yossiridho/PWL-Evaluasi-2.git
    ```
 
 2. **Install dependensi**:
