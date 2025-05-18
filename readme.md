@@ -78,7 +78,7 @@ Aplikasi ini merupakan portal berita modern yang dibangun menggunakan **Next.js*
    ```
    http://localhost:3000/login
    ```
-   Login menggunakan Google atau form dummy.
+   Login menggunakan Google
 
 ---
 
