@@ -12,7 +12,6 @@ const LoginPage = () => {
     e.preventDefault();
     console.log('Username:', username);
     console.log('Password:', password);
-    // Di sini bisa ditambahkan logika untuk login dengan username/password
   };
 
   const handleLoginWithGoogle = () => {
