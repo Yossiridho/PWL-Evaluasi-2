@@ -132,4 +132,10 @@ app/
 
 ---
 
-Selamat menggunakan aplikasi portal berita ini! 🚀
+## Preview
+1. login page
+   ![image](https://github.com/user-attachments/assets/c3312007-cfac-4cb3-8315-e0fffa088bcc)
+2. Home page
+   ![image](https://github.com/user-attachments/assets/6bf38f56-a535-4c4e-a0b3-89b6232790e9)
+
+
