@@ -134,8 +134,11 @@ app/
 
 ## Preview
 1. login page
-   ![image](https://github.com/user-attachments/assets/c3312007-cfac-4cb3-8315-e0fffa088bcc)
-2. Home page
-   ![image](https://github.com/user-attachments/assets/6bf38f56-a535-4c4e-a0b3-89b6232790e9)
+   ![image](https://github.com/user-attachments/assets/80567046-d9c9-4c50-bb12-0a2896d54bf6)
+
+   
+3. Home page
+   ![image](https://github.com/user-attachments/assets/d97171c8-c89b-4819-97e2-7f4521db2508)
+
 
 
