@@ -52,7 +52,7 @@ Aplikasi ini merupakan portal berita modern yang dibangun menggunakan **Next.js*
 
 2. **Install dependensi**:
    ```bash
-   npm install
+   npm install next react react-dom next-auth axios xml2js
    ```
 
 3. **Buat file `.env.local` di root proyek** dan isi dengan variabel berikut:
