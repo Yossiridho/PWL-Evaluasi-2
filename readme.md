@@ -137,6 +137,8 @@ app/
    
 3. Home page
    ![image](https://github.com/user-attachments/assets/d97171c8-c89b-4819-97e2-7f4521db2508)
+   ![image](https://github.com/user-attachments/assets/b6387562-70f3-4168-be12-dfc3041ab1bf)
+
 
 
 
